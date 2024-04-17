@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageBackground"
+        android:layout_width="958dp"
+        android:layout_height="538dp"
+        android:background="@drawable/longclownweatherbg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/weatherConditionTitle"
+        android:layout_width="187dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="33dp"
+        android:text="conditionTitle"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ConditionIcon"
+        android:layout_width="172dp"
+        android:layout_height="179dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="181dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/temperatureTitle"
+        android:layout_width="177dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="322dp"
+        android:gravity="center"
+        android:text="@string/tempTitle"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tempValueTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureTitle" />
+
+    <TextView
+        android:id="@+id/realFeelTitle"
+        android:layout_width="177dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="171dp"
+        android:gravity="center"
+        android:text="@string/realFeelTitle"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/realFeeltempValueTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/realFeelTitle" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="328dp" />
+
+    <TextView
+        android:id="@+id/visibilityTitle"
+        android:layout_width="122dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/visibilTitle"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ConditionIcon" />
+
+    <TextView
+        android:id="@+id/visibilityValueTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visibilityTitle" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="632dp" />
+
+    <TextView
+        android:id="@+id/windSpeedTitle"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:gravity="center"
+        android:text="@string/windSpeedTitle"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/windSpeedltempValueTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/windSpeedTitle" />
+
+    <TextView
+        android:id="@+id/windDegTitle"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="276dp"
+        android:gravity="center"
+        android:text="@string/windDegreesTitle"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <TextView
+        android:id="@+id/windDegltempValueTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/windDegTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

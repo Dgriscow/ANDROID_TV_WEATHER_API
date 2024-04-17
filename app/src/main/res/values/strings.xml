@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ANDROID_WEATHER_API</string>
+
+
+    <string name="visibilTitle">Visibility</string>
+
+    <string name="tempTitle">Temperature</string>
+    <string name="realFeelTitle">Real Feel</string>
+
+    <string name="windSpeedTitle">Wind Speed</string>
+    <string name="windDegreesTitle">Wind Degrees</string>
+</resources>
